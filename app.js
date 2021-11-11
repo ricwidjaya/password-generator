@@ -19,6 +19,13 @@ app.get('/', (req, res) => {
   })
 })
 
+app.post('/', (req, res) => {
+  res.render('index', {
+    style: 'index.css'
+  })
+  console.log(req)
+})
+
 
 // Listen requests and start server
 app.listen(port, () => {
